@@ -451,10 +451,9 @@ code {
 
 #sidebar h1 {
   background: #111;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   padding: 20px;
-  text-transform: uppercase;
 }
 
 #sidebar h2 {
@@ -617,6 +616,7 @@ code {
 }
 
 #content .body {
+  background: #eeeeee;
   border-top: 1px solid #eef1f2;
   display: block;
   padding: 15px 15px 0;
