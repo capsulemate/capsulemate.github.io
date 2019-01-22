@@ -25,11 +25,11 @@ html {
 
 /*- Link -*/
 a {
-  color: #008A3C;
+  color: black;
   text-decoration: none;
   font-weight: 700; }
   a:hover, a:focus {
-    color: #007131; }
+    color: #5cbeb1; }
 
 img {
   max-width: 100%;
@@ -40,6 +40,12 @@ img {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px; }
+
+video {
+    max-width: 100%;
+    max-height: 600px;
+}
+
 
 /*- Typography -*/
 body {
@@ -327,8 +333,8 @@ blockquote {
     max-height: 500px;
 }
 
-#posts video {
-    max-height: 500px;
+#posts p {
+    text-align: justify;
 }
 
 #posts h2 {
@@ -673,3 +679,17 @@ footer {
 
 /* Literal.Number.Integer.Long */
 /*- Custom style -*/
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.div-2 {
+    width: 50%;
+    float: left;
+    padding: 2%;
+}
+
+.div-2 video {
+    width: 100%;
+    max-height: 1000px;
+}
