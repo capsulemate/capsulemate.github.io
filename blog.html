@@ -29,6 +29,7 @@
         <a href="index.html">Home</a>
 	    <a href="index.html#about">About CapsuleMate</a>
         <a href="index.html#team">Meet the Team</a>
+        <a href="gallery.html">Gallery</a>
 	</div>
   
   <!-- Nav footer -->
@@ -65,15 +66,48 @@
 
 <!-- blog post 1 -->    
 	  <li class="post">
-	  	<h3>Week # Update</h3>
-	  	<time datetime="2019-01-25T00:00:00-05:00" class="by-line">Jan 17, 2019</time>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</p>
-          
-        <video controls>
+	  	<h3>Week 1 Update</h3>
+	  	<time datetime="2019-01-21T00:00:00-05:00" class="by-line">Jan 21, 2019</time>
+	  	<p>Coming into 2019, we moved out of the design phase and started building the first iteration of the full mechanical structure. This includes the dispensing mechanism prototyped early last fall, the storage component, and the tube with the photosensor. To see earlier updates of the dispensing mechanism and some other CAD designs check out our <a href="gallery.html">gallery</a> page. 
+</p>
+          <p>To begin, we started by 3D printing the components and fitting them together. After printing out the bits and assembling one quadrant of the final structure we identified the first hurdle. The pills did not fall out of the storage component as expected. Instead, they jammed in the storage component, totally unreachable by the dispensing mechanism as seen in the video below.
+</p>
+         <video controls>
           <source src="video/faulty-funnel.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</p>
+        
+          
+          <p><br>Fluke solution: Frustrated with the problem, we knocked the storage component around a little bit and realized that with enough of a push the pills would dislodge. Then came the problem of how to automate this motion. After pondering for a few days we came up with several creative solutions to address the problem of the jammed pills (the viable ones are listed below):
+</p>
+          
+          <div>
+              <div class='div-2'><img src='img/blog/week1-sketch-1.jpg'></div>
+              <div class='div-2'><img src='img/blog/week1-sketch-2.jpg'></div>
+          </div>
+          
+              <p> &#8594; A slide or conveyer belt within the storage vault to keep the pills moving. The con to this solution is how to go about accomodating a conveyer with the existing design.
+</p>
+          
+              <p> &#8594; Another idea is to make the entire storage container vibrate. One concern with this idea is how much vibration is required to keep the pills moving. In addition, there is difficulty decoupling the storage component from the rest of the chassis.
+          </p>
+          
+          <p>After many rounds of brainstorming, we came to the easiest solution, a rotating arm in the centre of the storage component to prevent the pills from getting jammed. The benefit of this idea is that it is minimally invasive to our current design and was easy to test out. Immediately, we went about making a quick prototype as seen below. 
+</p>
+          <div>
+              <div class='div-2'><img src='img/blog/storage.jpg'></div>
+              <div class='div-2'><img src='img/blog/stirring.jpg'></div>
+          </div>
+          
+<p>The straw has an arm at the bottom that sweeps the bottom of the storage funnel and dislodges any stuck pills. Content with the first test we went about automating it by adding a motor to control the rotation. </p>  
+          
+          <video controls>
+          <source src="video/blender.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+          
+<p><br>Success, we will update our SolidWorks model to reflect these changes and continue to move forward!</p>          
+          
 	  </li>
 <!-- blog post 1 END--> 
 
