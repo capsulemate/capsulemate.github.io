@@ -64,9 +64,50 @@
 			<!-- Posts -->
 <ul id="posts">
 
+<!-- blog post 2 -->
+<li class="post">
+		<h3>Week 2 Update: RIP Raspberry PI & One Quadrant Assembly </h3>
+		<time datetime="2019-01-28T00:00:00-05:00" class="by-line">Jan 28, 2019</time>
+
+		<p>Here’s a recap of week 2 and what went down at CapsuleMate headquarters. Following a successful solution to the pill getting stuck in the storage component last week, the team went about assembling a full quadrant of the full pill dispensing apparatus.
+	</p>
+		<div class='div-2'><img src='img/week2/dead_pi.jpg'></div>
+		<p>Right off the bat, there was a slight hitch, namely that our Raspberry Pi died because of static electricity. This was a problem considering that it controls the solenoid for dispensing, the stirring rods, the alignment cylinder etc. Nevertheless, this unexpected hump in our timeline was a valuable lesson about static electricity and that anything with exposed electronics including the Raspberry Pi is vulnerable to it. We have since replaced the PI and have reviewed ESD precautions, by investing in an anti-static strap, and generally discharging static by touching a grounded metal object.
+	</p>
+		<p> With the new , we were able to meet our original goal of assembling a full quadrant of the structure and powering it with electronics. We laser cut the base (which will house all the electrical components) out of acrylic sheets. Then, we mounted the dispensing structure above it to see a full quadrant in operation.
+	</p>
+		<div>
+			<div class='div-2'><img src='img/week2/base.jpg'></div>
+			<div class='div-2'><img src='img/week2/quad_assembly.jpg'></div>
+		</div>
+
+
+		<p>As a bonus, we connected the electronics available (servomotors to control the stirring rod and the solenoid to push out pills) to get a quasi-automated structure as seen in the video below. As anticipated, with the aid of the stirring stick the pills dislodge from the storage container, then the pusher piece and solenoid combo successfully isolate one pill to dispense. 
+	</p> 
+
+	<video controls>
+			<source src="video/quad_opeartion.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+	</video>
+
+	<h4>Next steps</h4>
+		<p><br>Assembling this quadrant gave the team an opportunity to observe nuances with the physical build that weren’t noticed in the CAD designs. As expected we discovered a few changes we need to make with the remaining parts before printing them:
+	</p>
+			<p> &#8594; Reduce the size of the base plates to 14cm x 14 cm so they fit together better on top of the base
+		</p>
+			<p> &#8594; Design a more sturdy stirring rod
+		</p>
+			<p> &#8594; Support the motor so that it stays aligned in the centre of the storage compartment.
+		</p>
+		<p>We also discovered that the servo motor we purchased only supported continuous 360 rotation, and cannot turn to a specified angle. Since our cylinder component needs to be turned a certain amount we ordered new motors.In this upcoming week, we will focus on the photosensor and LED combo to detect whether a pill has fallen, which should be the last step to produce a fully automated mechanism. 
+	</p>         		
+
+	</li>
+	<!-- blog post 2 END-->
+
 <!-- blog post 1 -->    
 	  <li class="post">
-	  	<h3>Week 1 Update</h3>
+	  	<h3>Week 1 Update: When Gravity Just Isn't Enough</h3>
 	  	<time datetime="2019-01-21T00:00:00-05:00" class="by-line">Jan 21, 2019</time>
 	  	<p>Coming into 2019, we moved out of the design phase and started building the first iteration of the full mechanical structure. This includes the dispensing mechanism prototyped early last fall, the storage component, and the tube with the photosensor. To see earlier updates of the dispensing mechanism and some other CAD designs check out our <a href="gallery.html">gallery</a> page. 
 </p>
