@@ -693,3 +693,18 @@ footer {
     width: 100%;
     max-height: 1000px;
 }
+
+.half {
+    width: 50%;
+}
+
+#blog-blurb {
+    color: #49988D;
+}
+
+#blog-blurb a {
+  color: #49988D;
+  text-decoration: none;
+  font-weight: 700; }
+#blog-blurb a:hover, #blog-blurb a:focus {
+    color: #5cbeb1;}

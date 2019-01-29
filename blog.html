@@ -52,7 +52,6 @@
 	  <img src='img/logo.png' alt='logo'>
 	</a>
        <h2>BLOG</h2>
-
 </header>
 
       
@@ -63,15 +62,28 @@
 
 			<!-- Posts -->
 <ul id="posts">
+    
+<!-- info blurb + menu -->
+<li class="post">
+    <h3>Welcome to the blog, follow CapsuleMate's progress with weekly updates!</h3>
+</li>
+<li class="post" id='blog-blurb'>
+    <h3>Table of Contents</h3>
+    <br>
+    <p><a href="blog.html#week1">Week 1 Update: When Gravity Just Isn't Enough</a></p>
+    <p><a href="blog.html#week2">Week 2 Update: RIP Raspberry PI & One Quadrant Assembly</a></p>
+<br>
+	</li>
+<!-- info blurb + menu END-->
 
 <!-- blog post 2 -->
-<li class="post">
+<li class="post" id="week2">
 		<h3>Week 2 Update: RIP Raspberry PI & One Quadrant Assembly </h3>
 		<time datetime="2019-01-28T00:00:00-05:00" class="by-line">Jan 28, 2019</time>
 
 		<p>Here’s a recap of week 2 and what went down at CapsuleMate headquarters. Following a successful solution to the pill getting stuck in the storage component last week, the team went about assembling a full quadrant of the full pill dispensing apparatus.
 	</p>
-		<div class='div-2'><img src='img/week_2/dead_pi.jpg'></div>
+    <img class='half' src='img/week_2/dead_pi.jpg'>
 		<p>Right off the bat, there was a slight hitch, namely that our Raspberry Pi died because of static electricity. This was a problem considering that it controls the solenoid for dispensing, the stirring rods, the alignment cylinder etc. Nevertheless, this unexpected hump in our timeline was a valuable lesson about static electricity and that anything with exposed electronics including the Raspberry Pi is vulnerable to it. We have since replaced the PI and have reviewed ESD precautions, by investing in an anti-static strap, and generally discharging static by touching a grounded metal object.
 	</p>
 		<p> With the new , we were able to meet our original goal of assembling a full quadrant of the structure and powering it with electronics. We laser cut the base (which will house all the electrical components) out of acrylic sheets. Then, we mounted the dispensing structure above it to see a full quadrant in operation.
@@ -106,7 +118,7 @@
 <!-- blog post 2 END-->
 
 <!-- blog post 1 -->    
-	  <li class="post">
+	  <li class="post" id="week1">
 	  	<h3>Week 1 Update: When Gravity Just Isn't Enough</h3>
 	  	<time datetime="2019-01-21T00:00:00-05:00" class="by-line">Jan 21, 2019</time>
 	  	<p>Coming into 2019, we moved out of the design phase and started building the first iteration of the full mechanical structure. This includes the dispensing mechanism prototyped early last fall, the storage component, and the tube with the photosensor. To see earlier updates of the dispensing mechanism and some other CAD designs check out our <a href="gallery.html">gallery</a> page. 
