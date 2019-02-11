@@ -73,9 +73,60 @@
     <p><a href="blog.html#week1">Week 1 Update: When Gravity Just Isn't Enough</a></p>
 	<p><a href="blog.html#week2">Week 2 Update: RIP Raspberry PI & One Quadrant Assembly</a></p>
 	<p><a href="blog.html#week3">Week 3 Update: The Power of Gears</a></p>
+	<p><a href="blog.html#week4">Week 4 Update: Photoresistor + LED </a></p>
 <br>
 	</li>
 <!-- info blurb + menu END-->
+
+<!-- blog post 4 -->
+<li class="post" id="week4">
+	<h3>Week 4 Update: Photoresistor + LED </h3>
+	<time datetime="2019-10-02T00:00:00-05:00" class="by-line">Feb 10, 2019</time>
+
+	<p> 
+		This past week we tested the last electrical component required to get quadrant one of the dispenser up and running. 
+		This is the photoresistor and LED combo that verifies that a pill is actually dispensed in order to prevent false positives. 
+		In our initial design, we toyed around with several different sensors to verify the pill dispensed such a load sensor and an
+		RGB colour sensor to verify based on weight or colour respectively. Ultimately, we chose a photoresistor and LED combo that 
+		would sit inside the final dispensing tube. Upon testing the system we realized that while the photoresistor worked correctly, 
+		the pill fell down through the tube too quickly for the photoresistor to recognize a change in light intensity. 
+	</p>
+	<div>
+		<div class='div-2'>
+				<video controls>
+						<source src="video/tube_example.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+				</video>
+		</div>
+		<div class='div-2'>
+				<video controls>
+						<source src="video/tube_values.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+				</video>
+		</div>
+		<div class="caption" style="width: 200px">Video 1: The pill falling through the tube, Video 2: The photoresistor briefly detecting a pill</div>
+	</div>
+	<p>
+		We then brainstormed alternate solutions, one of which was to re-locate the photoresistor to the bottom of the tube so
+		that the pill would be stationary; thus, giving the photoresistor enough time to detect it. When this didn’t work we rethought
+		our strategy for the pill dispenser. The purpose of the photoresistor and the LED combo is to verify that a pill is actually 
+		dispensed by the solenoid and prevent false positives. Therefore, we can detect the pill anytime after it is dispensed not
+		solely as it’s falling through the tube. For this reason, we decided to relocate the photosensor into the side of the pusher
+		piece where the pill remains stationary for several seconds until it is dropped into the tube.
+	</p>
+	<video controls>
+			<source src="video/pusher_piece_photoresistor.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+	</video>
+		<div class="caption" style="width: 200px">The photo resistor values increase by 200 when the pill is detected</div>
+	<p> 
+		With some more testing, we found that the photosensor seemed to output the greatest difference in values without the LED shining on it. 
+		The contrast between the ambient light and the presence of the pill seemed sufficient, but we will test this again on the 
+		final build and pick a solution that maximizes the change in light intensity. Either way, with this we managed to complete all the 
+		functions (mechanical and electrical) required to get one quadrant of the structure working! 
+	</p>     		
+</li>
+<!-- blog post 4 END-->
 
 <!-- blog post 3 -->
 <li class="post" id="week3">

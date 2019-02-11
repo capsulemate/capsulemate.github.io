@@ -742,3 +742,8 @@ footer {
   font-weight: 700; }
 #blog-blurb a:hover, #blog-blurb a:focus {
     color: #5cbeb1;}
+
+.caption {
+      width: 200px;
+      text-align: center;
+  }
