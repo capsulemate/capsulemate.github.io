@@ -744,6 +744,6 @@ footer {
     color: #5cbeb1;}
 
 .caption {
-      width: 200px;
       text-align: center;
+      padding: 24px;
   }
