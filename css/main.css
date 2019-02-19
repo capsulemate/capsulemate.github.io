@@ -100,6 +100,10 @@ h3, h4, h5, h6 {
   padding: 0.66667em 0;
   /* 12px/18px * 2 (Use padding instead of margin to maintain proximity with paragraph) */ }
 
+caption {
+  color: #FDFDFD;
+}
+
 blockquote {
   font-style: italic;
   margin: 1.5em;
@@ -713,10 +717,9 @@ footer {
 }
 
 .div-3 {
-  width: 33%;
-  position: relative;
+  width: 33.33%;
   float: left;
-  padding: 0%;
+  padding: 1%;
 }
 
 .div-4 {
