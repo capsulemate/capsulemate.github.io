@@ -32,6 +32,16 @@ a {
   a:hover, a:focus {
     color: #5cbeb1; }
 
+gallery_h3 {
+  color: #49988D;
+  text-decoration: none;
+  font-size: 1.3334em;
+  /* 24px/18px */
+  line-height: 1em;
+  /* 24px/24px */
+  padding: 0.5em 0;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -361,6 +371,12 @@ blockquote {
 #posts h2,h3,h4 {
     margin-bottom: 15px;
     text-align: center;
+}
+/* Reserved for gallery posts --tyurina */
+#posts h5 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #49988D;
 }
 
 #post-page {
