@@ -16,6 +16,17 @@
 	<!-- RSS -->
 	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
 
+	<STYLE>
+		.TextWrapleft {
+			float:left;
+			margin:10px;
+		}
+		.TextWrapright {
+			float:right;
+			padding-bottom: 25px;	
+			margin:20px;
+		}
+	</STYLE>
 </head>
 
 
@@ -39,40 +50,59 @@
     <!-- Main content -->
 	  <div id="container">
 		  
-		<main>
-
-			<!-- Posts -->
+<main>
+<!-- Posts -->
 <ul id="posts">
-
-    
-<!-- Background  -->	
-<!--	  <li class="post" id='about'>
-	  	<h2>Background</h2>
-	  	<p>bla bla bla</p>
-	  </li>
--->
-    
 <!-- About CapsuleMate  -->	
 	  <li class="post" id='about'>
-	  	<h2>About CapsuleMate</h2>
-	  	<p>CapsuleMate is a fourth-year Mechatronics design project! It is a smart pill dispenser, that notifies a user, and then dispenses the appropriate combination of medications at the correct time. To follow along with CapsuleMate's progress take a look at the <a href="blog.html">blog</a>. </p>
-        <img src='img/gallery/full-isometric.PNG' alt='full assembly'>
-	  </li>
-
-</ul>
-
-
-	  </main>
-
-	  </div>
-	    
-	    <!-- Footer -->
+			<!-- <img src='img/gallery/full-isometric.PNG' width="250px" height="250px" CLASS="TextWrapleft"> -->
+			
+			<img src='img/gallery/full-isometric.PNG' width="275px" height="275px" CLASS="TextWrapleft">
+			<h2>About </h2>
+	  	<p> CapsuleMate is a smart pill dispenser designed to notify a user and dispense the appropriate combination 
+				of medications at the correct time. It aims to reduce non-adherence by automating the process of remembering which medications
+				 to take and at what intervals.
+			</p>	
+			<p> It is a fourth-year Mechatronics design project out of the University of Waterloo!
+					To follow along with CapsuleMate's weekly progress take a look at the <a href="blog.html">blog</a>.
+			</p>
+			<p>To get in contact with the team email <a href="mailto:capsulematefydp@gmail.com">us.</a></p>
+		</li>
+		<li class="post" id='background'>
+			<h2>Background</h2>
+			<img src='img/about/non_adherence.png' alt='full assembly' CLASS="TextWrapright">
+			<p>
+				The term coined for failing to adhere to a prescription schedule by either missing or neglecting to take medication is <b>non-adherence.</b>
+				 Non-adherence is one of the biggest challenges experienced by pharmacists around the globe.
+				In a survey conducted by the Canadian Pharmacists association nearly 30% of Canadians report not taking their medication.
+			</p>
+			<p>
+				One group where the effects of non-adherence are compounded is the elderly population. Non-adherence is observed for a variety
+				of reasons ranging from lack of belief in the medication to simple forgetfulness. Excluding those with cognitive impairments 
+				concerns a notable struggle is that scheduling becomes increasingly complicated when coordinating more than one medication at a time.
+				As a result, there is a need for a device  that can automate the sorting and dispensing of pills and set an alert to remind people 
+				to take their medication on time.
+				</p>
+		</li>
+		<li class="post" id='objective'>
+				<h2>Available Solutions </h2>
+				<p>There are currently many commercial solutions avaiable in the market, from simple plastic pill organizes to complex smart dispensers.
+					 However, few  attempt to dispense both the correct combination of pills and at the correct time. Or in the case of Hero pictured below
+					 are able to do so but for a total cost of $400 USD. In the meantime, people can also rely on their pharamcist to manaully organize their
+					 pills for them. 
+					 <div>
+							<div class='div-2'><img src='img/about/spencer.png'width="250px" height="250px">Spencer: <br> Con: Requires Blister Packs</div>
+							<div class='div-2'><img src='img/about/hero.jpg' width="250px" height="250px">Hero: <br> Con: $ 400 USD</div>
+						</div>	
+				</p>
+	</ul>
+</main>
+</body>
+</div>
+<!-- Footer -->
 	    <footer><span></span></footer>
 
 	    <!-- Script -->
       <script src="js/main.js"></script>	
-
-
 	</div>
-</body>
 </html>
