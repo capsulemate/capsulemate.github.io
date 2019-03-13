@@ -58,9 +58,74 @@
 	<p><a href="blog.html#week5">Week 5 Update: Demo Time!  </a></p>
 	<p><a href="blog.html#week6">Week 6 Update: ¼ of the Way There!</a></p>
 	<p><a href="blog.html#week7">Week 7 Update: The Puzzle is Coming Together </a></p>
+	<p><a href="blog.html#week8">Week 8 Update: The Light at the End of the Tunnel </a></p>
 <br>
 	</li>
 <!-- info blurb + menu END-->
+<!-- blog post 8-->
+<li class="post" id="week8">
+	<h3> Week 8 Update: The Light at the End of the Tunnel </h3>
+	<time datetime="2019-10-03T00:00:00-05:00" class="by-line">March 12, 2019</time>
+
+	<p> 
+		After 8 months of work, we’re finally at T- 3 days till symposium, hooray! This past week was spent putting the finishing touches on
+		the entire assembly, but mainly writing the accompanying software to have the pill dispenser work from start to finish.
+		 Now that all the loose ends have been tied, we can dedicate this post to a step by step breakdown of the pill dispenser in action. 
+	</p>
+	<p>
+		First, the pharmacist/user will provide all the information that the pill dispenser requires for the setup using the simple web interface.
+	</p>
+	<div>
+		<div class='div-2'><img src='img/week_8/template_website.png'></div>
+		<div class='div-2'><img src='img/week_8/quad_info.png'></div>
+	</div>		
+	<div class='caption'> <b>Left:</b> The Website to Load Pill Information <b>Right: </b> The Information Required Per Quadrant </div>
+
+	<p> 
+		The Raspberry Pi then receives this information and prompts the user to load the pills in succession. After all the quadrants are loaded,
+		 the screen tells the user that loading is complete and when the pill will be dispensed next.
+	</p>
+	<div>
+			<div class='div-2 video'>
+					<video controls>
+							<source src="video/loading.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+					</video>
+			</div>
+			 <div class='div-2'><img src='img/week_8/loading_message.jpg'></div>
+			</div>
+			<div class= 'caption'> <b>Video Left:</b> The cylinders turning to start loading <b>Image Right:</b> Sample Loading Message </p>
+
+	<p> Finally, when it is time to dispense, the appropriate quadrant starts the sequence of operations required to dispense the pills. 
+		First, the continuous servo motors starts up and stirs the pills to dislodge any that might be stuck in the storage compartment.
+		 Then, the photoresistor verifies that a pill is in place and ready to dispense. At this point, the solenoid is powered causing the pill 
+		 to fall through the tubes and land in the nifty drawer we assembled this week. Finally, the buzzer is sounded at the end to alert the 
+			user that a pill is dispensed. </p>
+
+			<div>
+					<div class='div-2 video'>
+							<video controls>
+									<source src="img/week_8/dispensing.mp4" type="video/mp4">
+									Your browser does not support HTML5 video.
+							</video>
+					</div>
+					<div class='div-2 video'>
+							<video controls>
+									<source src="img/week_8/continuous_dispensing.mp4" type="video/mp4">
+									Your browser does not support HTML5 video.
+							</video>
+					</div>
+					<div class= 'caption'> <b>Video Left:</b> Sequence of Events to Dispense <b>Video Right:</b> Continuous Dispensing </p> 
+			
+
+	<p> Tada, and that is the pill dispenser in action! To look at the code more in-depth
+		 check out the <a href="https://github.com/capsulemate/CapsulemateSoftware">repository</a> containing all the operational logic.
+		 In the next couple of days, we will smooth out some minor aesthetic details and get the dispenser ready for the big day.
+		 We’ll check back, after symposium is done!
+	</p> 
+</li>
+<!-- blog post 8 END-->
+
 <!-- blog post 7-->
 <li class="post" id="week7">
 	<h3> Week 7 Update: The Puzzle is Coming Together </h3>
